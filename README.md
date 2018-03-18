@@ -31,12 +31,24 @@ You previously learned about the Unified Robot Description Format (URDF) in Term
 Let's first create a new folder in your package directory and an empty xacro file for the robot's URDF description.
 
 ### Launch Model
+
+[image_2]: ./images/empty_gazebo_world.png
+![alt text][image_2]
+
 Create a new launch file that will help load the URDF file.
 
 ### Robot Actuation
+
+[image_3]: ./images/empty_gazebo_world.png
+![alt text][image_3]
+
 Great work till now! You will next add wheels to your robot. For this robot, you will require only two wheels. Each wheel is represented as a link and is connected to the base link (the chassis) with a joint. 
 
 ### Robot Sensors
+
+[image_4]: ./images/empty_gazebo_world.png
+![alt text][image_4]
+
 During both Term 1 and 2, you have come across and learned about different sensors that help provide robot feedback about its environment. For this robot, you will add two sensors - a camera and a laser rangefinder.
 
 ### Laser Rangefinder
