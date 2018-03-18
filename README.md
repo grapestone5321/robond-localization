@@ -26,6 +26,14 @@ Note: Similar to project 1, you are required to document the work along the way.
 
 5. Document your work. You could use this Writeup Template. 
 
+## Robot Model: Basic Setup
+As a roboticist or a robotics software engineer, building your own robots is a very valuable skill and offers a lot of experience in solving problems in the domain. Often, there are limitations around building your own robot for a specific task, especially related to available resources or costs. 
+
+That's where simulation environments are quite beneficial. Not only do you have freedom over what kind of robot you can build, but you also get to experiment and test different scenarios with relative ease and at a faster pace. For example, you can have a simulated drone to take in camera data for obstacle avoidance in a simulated city, without worrying about it crashing into a building!
+
+You previously learned about the Unified Robot Description Format (URDF) in Term-1. In this section, you will build a very basic mobile robot model by creating its own URDF file!
+
+
 
 ## Recap
 You have done a great job so far with this project and hopefully learned a lot to be able to create your own projects for other robotics tasks! Let’s quickly recap what you covered in this project lesson -
