@@ -17,6 +17,9 @@ Note: Similar to project 1, you are required to document the work along the way.
 ## Gazebo: Hello, world!
 In Term 1, you worked on several projects where most of the project structure was already implemented or provided to you. In this section, you will start from scratch and develop your own package in ROS throughout this project!
 
+[image_1]: ./images/empty_gazebo_world.png
+![alt text][image_1] 
+
 ## Robot Model: Basic Setup
 As a roboticist or a robotics software engineer, building your own robots is a very valuable skill and offers a lot of experience in solving problems in the domain. Often, there are limitations around building your own robot for a specific task, especially related to available resources or costs. 
 
