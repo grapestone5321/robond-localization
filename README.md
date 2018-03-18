@@ -50,6 +50,10 @@ While Gazebo is a physics simulator, RViz can visualize any type of sensor data 
 In this section, you will integrate your model into RViz and visualize data from the camera and laser sensors!
 
 ## Adding a map
+
+[image_0]: ./images/sim_screenshot.png
+![alt text][image_0] 
+
 So far, you have created a robot model from scratch, added sensors to it to visualize its surroundings, and developed a package for this robot to launch it in a simulated environment. That's a great amount of work you have accomplished!
 
 But, what surroundings is your robot currently sensing? And how would you go about localizing the robot if you don't know where you wish to localize it? 
