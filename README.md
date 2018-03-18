@@ -27,5 +27,21 @@ Note: Similar to project 1, you are required to document the work along the way.
 5. Document your work. You could use this Writeup Template. 
 
 
+## Recap
+You have done a great job so far with this project and hopefully learned a lot to be able to create your own projects for other robotics tasks! Let’s quickly recap what you covered in this project lesson -
 
+- You learned to build your own simulated mobile robot, added sensors to it, and integrated it with Gazebo and RViz by developing a ROS package for that robot.
+
+- Next, you integrated ROS packages like the Adaptive Monte Carlo Localization (AMCL) package and the Navigation Stack, that would allow your robot to navigate and localize itself in a particular environment or map.
+
+- You then learned about different parameters corresponding to these packages that could help you improve your results.
+
+## Project Instructions
+You have made significant headway with your project already. There are a few more steps that you have to work on for your submission -
+
+- You need to explore and add more parameters to improve upon your localization results. Include a screenshot of the supplied robot at the goal position.
+
+- Once you achieve good results on the mobile robot we covered in the classroom, you will create your own mobile robot with significant changes to the model, and aim to achieve similar results for that robot! There's a lot you can experiment with here - you could try different wheels or a different laser sensor, or different drive controllers etc.
+
+You can find more details regarding your submission in the next section. Good luck!
 
