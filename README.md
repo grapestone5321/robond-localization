@@ -51,7 +51,7 @@ In this section, you will integrate your model into RViz and visualize data from
 
 ## Adding a map
 
-[image_0]: ./images/sim_screenshot.png
+[image_0]: ./images/localization_map.png
 ![alt text][image_0] 
 
 So far, you have created a robot model from scratch, added sensors to it to visualize its surroundings, and developed a package for this robot to launch it in a simulated environment. That's a great amount of work you have accomplished!
