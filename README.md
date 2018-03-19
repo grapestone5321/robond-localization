@@ -124,7 +124,7 @@ That’s what the PoseArray, in RViz, helps us with. The PoseArray depicts a cer
 
 ## Testing
 
-[image_13]: ./images/navigation_stack.png
+[image_13]: ./images/testing.png
 ![alt text][image_13]
 
 Going through different parameters, understanding their implications, and testing it all out in RViz will be a challenging task. That’s why we recommend you test your implementation on a shorter path rather than the entire map. 
