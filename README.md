@@ -46,7 +46,7 @@ Great work till now! You will next add wheels to your robot. For this robot, you
 
 ### Robot Sensors
 
-[image_4]: ./images/empty_gazebo_world.png
+[image_4]: ./images/robot_sensors.png
 ![alt text][image_4]
 
 During both Term 1 and 2, you have come across and learned about different sensors that help provide robot feedback about its environment. For this robot, you will add two sensors - a camera and a laser rangefinder.
