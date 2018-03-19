@@ -39,7 +39,7 @@ Create a new launch file that will help load the URDF file.
 
 ### Robot Actuation
 
-[image_3]: ./images/empty_gazebo_world.png
+[image_3]: ./images/blind_robot.png
 ![alt text][image_3]
 
 Great work till now! You will next add wheels to your robot. For this robot, you will require only two wheels. Each wheel is represented as a link and is connected to the base link (the chassis) with a joint. 
