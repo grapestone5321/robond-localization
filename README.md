@@ -116,7 +116,7 @@ That’s what the PoseArray, in RViz, helps us with. The PoseArray depicts a cer
 [image_10]: ./images/expected_results1.png
 ![alt text][image_10]
 
-[image_11]: ./images/navigation_stack.png
+[image_11]: ./images/expected_results2.png
 ![alt text][image_11]
 
 [image_12]: ./images/navigation_stack.png
