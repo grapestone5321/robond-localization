@@ -86,6 +86,16 @@ You learned about Monte Carlo Localization (MCL) in great detail in a previous l
 
 The ROS amcl package implements this variant and you will integrate this package with your robot to localize it inside the provided map.
 
+You will first load the provided map using a new node for the map_server package. Previously, the robot_state_publisher helped built out the entire tf tree of your robot based on the URDF file. But it didn't extend that tree by linking in the 'map' frame. The amcl package does that automatically by linking the 'map' and 'odom' frames.
+
+You will then add a node that will launch the amcl package. The package has its own set of parameters that define its behavior in RViz and how everything relates to your robot and the provided map so that the robot can effectively localize itself. Some of those parameters have been provided to you as a starting point. The amcl package relies entirely on the robot’s odometry and the laser scan data. 
+
+You first remap the scan topic to the udacity_bot/laser/scan topic on which your hokuyo sensor publishes the sensor data. You defined this topic when adding the gazebo plugin for the sensor. Then, you add parameters and define values for the different reference frames such as the odom or the map frames. The amcl package will now be able to take in the laser and odom data, and localize the robot!
+
+However, the robot is still stationary. How will it navigate to any position to collect more information from its surroundings?
+
+That’s where the ROS Navigation Stack comes in! 
+
 ### Navigation Stack
 
 [image_7]: ./images/navigation_stack.png
