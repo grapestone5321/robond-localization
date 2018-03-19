@@ -110,11 +110,44 @@ What makes this package more remarkable is that it has some built-in corrective 
 ### Launch Setup
 You have your robot, your map, your localization and navigation nodes. Let’s launch it all and test it!
 
+As you did in a previous section, setup your RViz by adding the necessary displays and selecting the required topics to visualize the robot and also the map.
+
+In Rviz,
+- Select “odom” for fixed frame
+- Click the “Add” button and
+
+   add “RobotModel”
+   
+   add “Map” and select first topic/map
+   
+     The second and third topics in the list will show the global costmap, and the local costmap. Both can be helpful to tune your parameters.
+     
+   add “PoseArray” and select topic /particlecloud
+   
+     This will display a set of arrows around the robot. 
+
+Note: As you discovered in the EKF lab, you can save the above RViz setup in a configuration file and launch RViz with the same configuration every time. This will make the process more efficient for you!
+
+Each arrow is essentially a particle defining the pose of the robot that your localization package created. Your goal is to add/tune the parameters that will help localize your robot better and thereby improve the pose array.
+
 [image_8]: ./images/launch_setup1.png
 ![alt text][image_8]
 
+In RViz, in the toolbar, 
+- Select “2D Nav Goal” click anywhere else on the map and drag from there to define the goal position along with the orientation of the robot at the goal position.
+
 [image_9]: ./images/launch_setup2.png
 ![alt text][image_9]
+
+Your robot should start moving towards your defined goal position!
+
+Whoa! Those warnings don't look good. 
+
+The amcl.launch file is throwing a lot of warnings, your map in RViz might be flickering, your robot might not be moving too well or at all etc. 
+
+All of these are expected. We have provided you with a template for launching the necessary nodes and packages. However, it is up to you to explore some of the important parameters and tune them to effectively navigate and accurately localize the robot in this map. 
+
+In the next section, we will cover some of the parameters that have been provided to you and some that you can consider to get started!
 
 ## Parameter Tuning
 Exploring, adding, and tuning parameters for the amcl and move_base packages are some of the main goals of this project. In this section, we will cover some parameters that will help you get started, but you will get a chance to experiment with the rest and observe what effect they bring about. 
