@@ -128,6 +128,46 @@ You should expect similar results around the goal position. Depending upon how t
 
 Your aim for this project is to make sure that your localization results are as certain of the robot’s pose as the above images depict. If the spread of the arrows, or particles, is too large then the robot is highly uncertain of its position, and the same goes for which direction the majority of the arrows are pointing in.
 
+## AMCL Parameters
+The amcl package has a lot of parameters to select from. Different sets of parameters contribute to different aspects of the algorithm. Broadly speaking, they can be categorized into three categories - overall filter, laser, and odometry. Let’s cover some of the parameters that we recommend you start with or details to focus on.
+
+### Overall Filter
+min_particles and max_particles - As amcl dynamically adjusts its particles for every iteration, it expects a range of the number of particles as an input. Often, this range is tuned based on your system specifications. A larger range, with a high maximum might be too computationally extensive for a low-end system.
+
+- transform_tolerance - This is perhaps one of the most important parameters to work with and to tune properly. Like the ones before, this parameter is also dependent on your system specifications. This helps decide the longevity of the transform(s) being published for localization purposes. A good value should only be to account for any lags in the system.
+
+- initial_pose - For the project, you should set the position to [0, 0]. Feel free to play around with the mean yaw value.
+Laser
+
+- There are two different types model to consider under this - the likelihood_field and the beam. The likelihood_field model is usually more computationally efficient and reliable for an environment such as the one you are working with. So you can focus on parameters for that particular model.
+
+### Odometry
+- odom_model_type - Since you are working with a differential drive mobile robot, it’s best to use the diff-corrected type. There are additional parameters that are specific to this type (odom_alphas), and its recommended to focus on them as well. 
+All the remaining parameters and any associated details can be found on the ROS wiki. 
+
+### move_base Parameters
+While defining the move_base node in a previous section, we introduced four configuration (yaml) files. Each file corresponded to a specific functionality that aids the package. We will cover some details for each file below.
+
+### Local or Global costmap parameters
+This file consists of parameters that specify the behavior associated with your local (or global) costmap. The local costmap relies on odom as a global frame since it updates as the robot moves forward. Since the costmap updates itself at specific intervals, and aims to cover a specific region around the robot it requires its own updating and publishing frequencies, as well as dimensions for the costmap. You will notice a similar set of parameters for the global costmap.
+
+Some of the values provided to you are tunable, and you don’t necessarily require additional parameters. You can refer to the list here as well.
+
+### Common costmap parameters
+For the list of parameters common to both types of costmaps you define which sensor is the source for observations. In our case, that’s the laser sensor. 
+Aside from that, there are a few parameters that you are required to tune. You can find some great documentation on those parameters and their purpose here.
+
+### Base local planner
+We previously mentioned that the move_base package creates and calculates a path or a trajectory to the goal position, and navigates the robot along that path. The set of parameters in this configuration file customize this particular behavior. 
+
+Here you can find a list of all the parameters that you can explore. The category of parameters corresponding to the robot configuration is especially important. Some additional parameters that you can consider -
+
+- yaw and xy goal tolerances - These tolerances help define how close the robot’s pose can be to the goal position. In an upcoming section, we will provide you with a C++ node that will set the goal position for the project. Tuning these two parameters will play an important part at that point.
+
+- sim_time, meter_scoring, and pdist_scale could be useful as well.
+
+That’s definitely a lot of parameters to cover! But don’t worry, once you start observing the effects of each parameter (or set of them) on your robot and results, you will have a more intuitive understanding of each of them for this task. It’s recommended that you try to keep track of what each iteration of adding and tuning results in. It will be extremely useful for you when you write your report for the project submission.
+
 ## Testing
 
 [image_13]: ./images/testing.png
