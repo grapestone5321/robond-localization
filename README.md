@@ -212,15 +212,16 @@ Here you can find a list of all the parameters that you can explore. The categor
 That’s definitely a lot of parameters to cover! But don’t worry, once you start observing the effects of each parameter (or set of them) on your robot and results, you will have a more intuitive understanding of each of them for this task. It’s recommended that you try to keep track of what each iteration of adding and tuning results in. It will be extremely useful for you when you write your report for the project submission.
 
 ## Testing
-
-[image_13]: ./images/testing.png
-![alt text][image_13]
-
 Going through different parameters, understanding their implications, and testing it all out in RViz will be a challenging task. That’s why we recommend you test your implementation on a shorter path rather than the entire map. 
 
 The pose your robot starts with places it somewhere in the middle of a corridor. It is recommended that you carry out some initial tests across the length of that corridor before the robot takes a turn. This will help you figure out several aspects to improve your implementation. You can figure out if the robot gets stuck or not initially based on where it thinks are the walls with respect to its position, how quickly the robot moves and how quickly it sticks to the trajectory, and more importantly how good the PoseArray looks as the robot moves forward. Does it shrink or get worse? 
 
 You can easily carry out these tests using the 2D Nav Goal button in RViz’ toolbar, as we covered in another section.
+
+[image_13]: ./images/testing.png
+![alt text][image_13]
+
+The arrow, as indicated above, will represent the goal position, and the direction will represent the goal orientation for the robot.
 
 ## Launching
 The above method is great for testing, but for your project submission your robot needs to navigate to a specific goal position while localizing itself along the way. In the project repo we have provided you with a C++ node that will navigate the robot to the goal position for you. You will need to create a new folder for that.
