@@ -32,7 +32,7 @@ Let's first create a new folder in your package directory and an empty xacro fil
 
 ### Launch Model
 
-[image_2]: ./images/empty_gazebo_world.png
+[image_2]: ./images/robot_base.png
 ![alt text][image_2]
 
 Create a new launch file that will help load the URDF file.
