@@ -121,8 +121,12 @@ The position and the direction the arrows point in, represent an uncertainty in 
 [image_11]: ./images/expected_results2.png
 ![alt text][image_11]
 
+You should expect similar results around the goal position. Depending upon how the robot has to orient itself, it might have slightly poorer results, and that's acceptable. But overall, the PoseArray should be narrow, centered around the robot, and pointing in the right direction.
+
 [image_12]: ./images/expected_results3.png
 ![alt text][image_12]
+
+Your aim for this project is to make sure that your localization results are as certain of the robot’s pose as the above images depict. If the spread of the arrows, or particles, is too large then the robot is highly uncertain of its position, and the same goes for which direction the majority of the arrows are pointing in.
 
 ## Testing
 
