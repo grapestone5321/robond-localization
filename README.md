@@ -100,7 +100,7 @@ What makes this package more remarkable is that it has some built-in corrective 
 ### Launch Setup
 You have your robot, your map, your localization and navigation nodes. Let’s launch it all and test it!
 
-[image_8]: ./images/navigation_stack.png
+[image_8]: ./images/launch_setup1.png
 ![alt text][image_8]
 
 [image_9]: ./images/navigation_stack.png
