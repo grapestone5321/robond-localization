@@ -113,14 +113,14 @@ Exploring, adding, and tuning parameters for the amcl and move_base packages are
 Before we jump into the list, let’s take a step back and focus on what you are aiming to achieve. The move_base package will help navigate your robot to the goal position by creating or calculating a path from the initial position to the goal, and the amcl package will localize the robot. But how do we know how certain the algorithm is of the robot’s pose? 
 That’s what the PoseArray, in RViz, helps us with. The PoseArray depicts a certain number of particles, represented as arrows, around the robot. 
 
-[image_8]: ./images/navigation_stack.png
-![alt text][image_8]
+[image_10]: ./images/navigation_stack.png
+![alt text][image_10]
 
-[image_9]: ./images/navigation_stack.png
-![alt text][image_9]
+[image_11]: ./images/navigation_stack.png
+![alt text][image_11]
 
-[image_9]: ./images/navigation_stack.png
-![alt text][image_9]
+[image_12]: ./images/navigation_stack.png
+![alt text][image_12]
 
 ## Testing
 Going through different parameters, understanding their implications, and testing it all out in RViz will be a challenging task. That’s why we recommend you test your implementation on a shorter path rather than the entire map. 
