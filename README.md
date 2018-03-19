@@ -55,6 +55,10 @@ During both Term 1 and 2, you have come across and learned about different senso
 Now, let's add the laser rangefinder. ROS offers support for a lot of different types of sensors. One of them, that you will be using for this robot and the project, is the Hokuyo rangefinder! 
 
 ### Gazebo Plugins
+
+[image_5]: ./images/robot_sensors.png
+![alt text][image_5]
+
 You have successfully added sensors to your robot, allowing it to visualize the world around it! But how exactly does the camera sensor takes those images during simulation? How exactly does your robot move in a simulated environment? 
 
 The URDF in itself can't help with that. However, Gazebo allows us to create or use plugins that help utilize all available gazebo functionality in order to implement specific use-cases for specific models. 
