@@ -103,7 +103,7 @@ You have your robot, your map, your localization and navigation nodes. Let’s l
 [image_8]: ./images/launch_setup1.png
 ![alt text][image_8]
 
-[image_9]: ./images/navigation_stack.png
+[image_9]: ./images/launch_setup2.png
 ![alt text][image_9]
 
 ## Parameter Tuning
