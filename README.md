@@ -116,6 +116,8 @@ That’s what the PoseArray, in RViz, helps us with. The PoseArray depicts a cer
 [image_10]: ./images/expected_results1.png
 ![alt text][image_10]
 
+The position and the direction the arrows point in, represent an uncertainty in the robot’s pose. This is a very convenient, albeit a slightly subjective, method to understand how well your algorithm and your tuned parameters are performing. Based on the parameters and what values you select for them, as the robot moves forward in the map, the number of arrows should ideally reduce in number. The algorithm rules out some poses. This is especially the case for when the robot is closer to walls - it is more certain of its pose because of the laser data, as opposed to when it is roaming in an open area for too long.
+
 [image_11]: ./images/expected_results2.png
 ![alt text][image_11]
 
