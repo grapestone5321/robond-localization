@@ -225,6 +225,21 @@ You can easily carry out these tests using the 2D Nav Goal button in RViz’ too
 ## Launching
 The above method is great for testing, but for your project submission your robot needs to navigate to a specific goal position while localizing itself along the way. In the project repo we have provided you with a C++ node that will navigate the robot to the goal position for you. You will need to create a new folder for that.
 
+Copy the navigation_goal.cpp file to this folder. 
+
+In order to use or launch this node, you will first need to compile it. Fortunately, ROS can handle that for you. You will have to modify your CMakeLists.txt file for that. 
+
+Replace this file with the file present in the repo. Then,
+
+When launching the project, after you have launched udacity_world.launch and amcl.launch, in a new terminal run the following -
+
+The above will run the node, and you will notice your robot moving to the goal position. 
+
+You can also display the goal position in RViz using the “Pose” display. Try it out!
+
+Earlier we mentioned that you could create your own RViz configuration file instead of adding different elements everytime you launched the project. In the repo we have provided you with one such file that you can add to your package.
+
+Note: At this point, we recommend that you go through the project rubric as well. It would help you if you got familiar with some of the requirements, such as the report and any images, while tuning your parameters.,
 
 ## Recap
 You have done a great job so far with this project and hopefully learned a lot to be able to create your own projects for other robotics tasks! Let’s quickly recap what you covered in this project lesson -
