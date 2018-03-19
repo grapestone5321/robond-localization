@@ -97,8 +97,30 @@ The move_base package is a very powerful tool. It utilizes a costmap - where eac
 
 What makes this package more remarkable is that it has some built-in corrective behaviors or maneuvers. Based on specific conditions, like detecting a particular obstacle or if the robot is stuck, it will navigate the robot around the obstacle or rotate the robot till it finds a clear path ahead. 
 
+### Launch Setup
+You have your robot, your map, your localization and navigation nodes. Let’s launch it all and test it!
+
+[image_8]: ./images/navigation_stack.png
+![alt text][image_8]
+
+[image_9]: ./images/navigation_stack.png
+![alt text][image_9]
+
 ## Parameter Tuning
 Exploring, adding, and tuning parameters for the amcl and move_base packages are some of the main goals of this project. In this section, we will cover some parameters that will help you get started, but you will get a chance to experiment with the rest and observe what effect they bring about. 
+
+### Expected Results
+Before we jump into the list, let’s take a step back and focus on what you are aiming to achieve. The move_base package will help navigate your robot to the goal position by creating or calculating a path from the initial position to the goal, and the amcl package will localize the robot. But how do we know how certain the algorithm is of the robot’s pose? 
+That’s what the PoseArray, in RViz, helps us with. The PoseArray depicts a certain number of particles, represented as arrows, around the robot. 
+
+[image_8]: ./images/navigation_stack.png
+![alt text][image_8]
+
+[image_9]: ./images/navigation_stack.png
+![alt text][image_9]
+
+[image_9]: ./images/navigation_stack.png
+![alt text][image_9]
 
 ## Testing
 Going through different parameters, understanding their implications, and testing it all out in RViz will be a challenging task. That’s why we recommend you test your implementation on a shorter path rather than the entire map. 
