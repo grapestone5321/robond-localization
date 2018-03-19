@@ -56,7 +56,7 @@ Now, let's add the laser rangefinder. ROS offers support for a lot of different 
 
 ### Gazebo Plugins
 
-[image_5]: ./images/robot_sensors.png
+[image_5]: ./images/our_final_robot_model.png
 ![alt text][image_5]
 
 You have successfully added sensors to your robot, allowing it to visualize the world around it! But how exactly does the camera sensor takes those images during simulation? How exactly does your robot move in a simulated environment? 
