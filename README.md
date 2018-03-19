@@ -123,6 +123,10 @@ That’s what the PoseArray, in RViz, helps us with. The PoseArray depicts a cer
 ![alt text][image_12]
 
 ## Testing
+
+[image_13]: ./images/navigation_stack.png
+![alt text][image_13]
+
 Going through different parameters, understanding their implications, and testing it all out in RViz will be a challenging task. That’s why we recommend you test your implementation on a shorter path rather than the entire map. 
 
 The pose your robot starts with places it somewhere in the middle of a corridor. It is recommended that you carry out some initial tests across the length of that corridor before the robot takes a turn. This will help you figure out several aspects to improve your implementation. You can figure out if the robot gets stuck or not initially based on where it thinks are the walls with respect to its position, how quickly the robot moves and how quickly it sticks to the trajectory, and more importantly how good the PoseArray looks as the robot moves forward. Does it shrink or get worse? 
