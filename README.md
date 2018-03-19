@@ -63,6 +63,7 @@ You have successfully added sensors to your robot, allowing it to visualize the 
 
 The URDF in itself can't help with that. However, Gazebo allows us to create or use plugins that help utilize all available gazebo functionality in order to implement specific use-cases for specific models. 
 
+
 ## RViz
 While Gazebo is a physics simulator, RViz can visualize any type of sensor data being published over a ROS topic like camera images, point clouds, Lidar data, etc. This data can be a live stream coming directly from the sensor or pre-recorded data stored as a bag file. RViz is your one-stop tool to visualize all the three core aspects of a robot: Perception, Decision Making, and Actuation.
 
@@ -70,12 +71,13 @@ In this section, you will integrate your model into RViz and visualize data from
 
 ## Adding a map
 
-[image_0]: ./images/localization_map.png
-![alt text][image_0] 
+[image_6]: ./images/localization_map.png
+![alt text][image_6] 
 
 So far, you have created a robot model from scratch, added sensors to it to visualize its surroundings, and developed a package for this robot to launch it in a simulated environment. That's a great amount of work you have accomplished!
 
 But, what surroundings is your robot currently sensing? And how would you go about localizing the robot if you don't know where you wish to localize it? 
+
 
 In this section, you will launch your robot in a new environment using a map created by Clearpath Robotics.
 
@@ -85,6 +87,10 @@ You learned about Monte Carlo Localization (MCL) in great detail in a previous l
 The ROS amcl package implements this variant and you will integrate this package with your robot to localize it inside the provided map.
 
 ### Navigation Stack
+
+[image_7]: ./images/navigation_stack.png
+![alt text][image_7]
+
 You will be working with the move_base package using which you can define a goal position for your robot in the map, and the robot will navigate to that goal position.
 
 The move_base package is a very powerful tool. It utilizes a costmap - where each part of the map is divided into which area is occupied, like walls or obstacles, and which area is unoccupied. As the robot moves around, a local costmap, in relation to the global costmap, keeps getting updated allowing the package to define a continuous path for the robot to move along. 
