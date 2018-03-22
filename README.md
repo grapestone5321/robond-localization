@@ -27,6 +27,9 @@ That's where simulation environments are quite beneficial. Not only do you have 
 
 You previously learned about the Unified Robot Description Format (URDF) in Term-1. In this section, you will build a very basic mobile robot model by creating its own URDF file!
 
+### Unified Robot Description Format (URDF)
+Unified Robot Description Format or urdf, is an XML format used in ROS for representing a robot model. We can use a urdf file to define a robot model, its kinodynamic properties, visual elements and even model sensors for the robot. URDF can only describe a robot with rigid links connected by joints in a chain or tree-like structure. It cannot describe a robot with flexible links or parallel linkage.
+
 ### Robot URDF
 Let's first create a new folder in your package directory and an empty xacro file for the robot's URDF description.
 
